@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="startsetup.css">
+    <link rel="stylesheet" href="setup.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="anim.css">
+    <!-- <link rel="stylesheet" href="rayout.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id="cursor" class="cursor"></div>
+    <div id="page-link">
+        <a href="#section-top">
+            <div class="toppoint" style="text-align: right; position: fixed; right: 100px; bottom: 200px; margin-bottom: -150px; transition: .5s; opacity: 0;">
+                <div style="border-left:#0AE60A solid 2px; height: 100px; display: inline-block;"></div>
+                <div style="border-left:#0AE60A solid 2px; height: 40px; display: inline-block; transform: rotate(150deg); position: relative; bottom: 60px;"></div>
+                <p style="color: #0AE60A; position: relative;left: 12px; transform: rotate(90deg); font-weight: bold;">TOP</p>
+            </div>
+        </a>
+    </div>
+    <div class="pc-side-top">
+        <a href=""><img class="corp-logo" src="DecoBull-top.png" alt=""></a>
+        <div class="clickmenu" id="clickmenu">  
+            <div class="shortcut-bt">
+                <div class="bg-circle"></div>
+                <button type="button" class="button-lineset" name="button">
+                    <div class="button-line-t"></div>
+                    <div class="button-line-m"></div>
+                    <div class="button-line-b"></div>
+                </button>
+            </div>
+        </div>
+        <div class="shortcut-menu">
+            <ul class="menu-list" id="page-link">
+                <a href="#section1"><li>・製品紹介</li></a>
+                <a href="#section2"><li>・6つの進化</li></a>
+                <a href="#section3"><li>・ご利用者のお声</li></a>
+                <a href="#section4"><li>・システム構成</li></a>
+                <a href="#section5"><li>・導入の流れ</li></a>
+                <a href="#section6"><li>・よくあるご質問</li></a>
+            </ul>
+        </div>
+    </div>
+    <div class="pc-side-middle">
+        <svg class="color-set01">
+            <defs>
+                <linearGradient id="g">
+                    <stop offset="0" stop-color="#cfeeff70"/>
+                    <stop offset="1" stop-color="#0ae60a"/>
+                </linearGradient>
+            </defs>
+        </svg>
+        <div class="left-heartbeat">
+            <svg id="svg" width="770" height="600">
+                <path id="heartbeat-path-1" d="M 10 430 L 110 430 L 165 280 L 270 580 L 400 180 L 480 430 L 530 430 L 600 355 L 670 430 L 770 430" fill="#ffffff00" stroke="#00000020" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <div class="right-heartbeat">
+            <svg id="svg" width="770" height="600">
+                <path id="heartbeat-path-2" d="M 10 430 L 110 430 L 165 280 L 270 580 L 400 180 L 480 430 L 530 430 L 600 355 L 670 430 L 770 430" fill="#ffffff00" stroke="#00000020" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+            </svg>
+        </div>
+    </div>
+    <div class="pc-side-bottom">
+        <div class="list">
+            <ul>
+                <a href="https://www.shimabun.co.jp/"><li>Shimabun公式HP</li></a>
+                <a href=""><li>ご購入はこちらから</li></a>
+                <a href=""><li>お問い合わせ</li></a>
+                <a href=""><li>会員ページ</li></a>
+            </ul>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="goods-comment">
+            <h3 class="goods-copy">AI×IoTで作業者を見守り<br>災害を未然に防ぐ</h3>
+            <h1 class="goods-name">DecoBull<span class="name-sub">（デコブル）</span></h1>
+        </div>
+        <div class="main-img">
+            <div>
+                <img class="top-img01" id="section-top" src="C:\Users\i_takamatsu\Desktop\仮置き場\IOT新製品紹介LP\画像\sp-top-img.jpg" alt="">
+            </div>
+            <div>
+                <img class="top-img02" src="C:\Users\i_takamatsu\Desktop\仮置き場\IOT新製品紹介LP\画像\sp-second-img.jpg" alt="">
+            </div>
+        </div>
+        <div id="section1" class="section">
+            <div class="news-release">
+                <ul>
+                  <li>
+                    <p>2023.11.20</p>
+                    <h3><span style="color: rgb(252, 184, 37);">【重要】</span>本社システム機器更新に伴う機器停止のお知らせ</h3>
+                    <h4>以下の日時で本社ビルのシステム機器更新に伴う機器停止を行います。</h4>
+                    <h5>・日　時：2023年04月9日(日) 9:00 ～ 12:00</h5>
+                    <p>上記時間帯は、情報システムの全サービスが使用出来ません。</p>
+                    <p style="border-bottom: #999999 solid 1px; padding-bottom: 40px; margin-bottom: 40px;">電子メール、Web閲覧、共有フォルダ、サイボウズ、リモート接続等が利用できなくなります。ご理解の程、宜しくお願い致します。</p>
+                  </li>
+                  <li>
+                    <p>2023.11.20</p>
+                    <h3><span style="color: rgb(252, 184, 37);">【重要】</span>本社システム機器更新に伴う機器停止のお知らせ</h3>
+                    <h4>以下の日時で本社ビルのシステム機器更新に伴う機器停止を行います。</h4>
+                    <h5>・日　時：2023年04月9日(日) 9:00 ～ 12:00</h5>
+                    <p>上記時間帯は、情報システムの全サービスが使用出来ません。</p>
+                    <p style="border-bottom: #999999 solid 1px; padding-bottom: 40px; margin-bottom: 40px;">電子メール、Web閲覧、共有フォルダ、サイボウズ、リモート接続等が利用できなくなります。ご理解の程、宜しくお願い致します。</p>
+                  </li>
+                  <li>
+                    <p>2023.11.20</p>
+                    <h3><span style="color: rgb(252, 184, 37);">【重要】</span>本社システム機器更新に伴う機器停止のお知らせ</h3>
+                    <h4>以下の日時で本社ビルのシステム機器更新に伴う機器停止を行います。</h4>
+                    <h5>・日　時：2023年04月9日(日) 9:00 ～ 12:00</h5>
+                    <p>上記時間帯は、情報システムの全サービスが使用出来ません。</p>
+                    <p style="border-bottom: #999999 solid 1px; padding-bottom: 40px; margin-bottom: 40px;">電子メール、Web閲覧、共有フォルダ、サイボウズ、リモート接続等が利用できなくなります。ご理解の程、宜しくお願い致します。</p>
+                  </li>
+                  <li>
+                    <p>2023.11.20</p>
+                    <h3><span style="color: rgb(252, 184, 37);">【重要】</span>本社システム機器更新に伴う機器停止のお知らせ</h3>
+                    <h4>以下の日時で本社ビルのシステム機器更新に伴う機器停止を行います。</h4>
+                    <h5>・日　時：2023年04月9日(日) 9:00 ～ 12:00</h5>
+                    <p>上記時間帯は、情報システムの全サービスが使用出来ません。</p>
+                    <p style="border-bottom: #999999 solid 1px; padding-bottom: 40px; margin-bottom: 40px;">電子メール、Web閲覧、共有フォルダ、サイボウズ、リモート接続等が利用できなくなります。ご理解の程、宜しくお願い致します。</p>
+                  </li>
+                </ul>
+              </div>
+        </div>
+        <div id="section2" class="section">6つの進化</div>
+        <div id="section3" class="section">ご利用者からのお声</div>
+        <div id="section4" class="section">システム構成</div>
+        <div id="section5" class="section">導入の流れ</div>
+        <div id="section6" class="section">よくある質問</div>
+        <div class="button-fixed">
+            <button type="button" class="button-lineset-sp" name="button">
+                <div class="sp-button-line-t"></div>
+                <div class="sp-button-line-m"></div>
+                <div class="sp-button-line-b"></div>
+            </button>
+        </div>
+        <div class="sp-header-nav">
+            <ul class="sp-list-set">
+                <a href=""><li>Shimabun公式HP</li></a>
+                <div></div>
+                <a href=""><li>ご購入はこちらから</li></a>
+                <div></div>
+                <a href=""><li>お問い合わせ</li></a>
+                <div></div>
+                <a href=""><li>会員ページ</li></a>
+                <div></div>
+            </ul>
+            <img class="sp-corp-logo" src="DecoBull-top.png" alt="">
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $('.button-lineset').on('click', function(){
+            $('.bg-circle').toggleClass('bg-circle-show');
+            $('.menu-list').toggleClass('menu-list-show');
+            $('.button-line-t').toggleClass('close-t');
+            $('.button-line-m').toggleClass('close-m');
+            $('.button-line-b').toggleClass('close-b');
+            $('.button-lineset').toggleClass('button-lineset-show');
+        });
+
+        $('.button-lineset-sp').on('click', function(){
+            $('.sp-header-nav').toggleClass('sp-header-nav-show');
+            $('.sp-corp-logo').toggleClass('sp-corp-logo-show');
+            $('.sp-button-line-t').toggleClass('sp-close-t');
+            $('.sp-button-line-m').toggleClass('sp-close-m');
+            $('.sp-button-line-b').toggleClass('sp-close-b');
+            $('.button-lineset-sp').toggleClass('button-lineset-show');
+        });
+
+        // カーソル用のdivタグを取得してcursorに格納
+        var cursor = document.getElementById('cursor'); 
+
+        // カーソル用のdivタグをマウスに追従させる
+        document.addEventListener('mousemove', function (e) {
+            cursor.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
+        });
+
+        // リンクにホバーした時にクラス追加、離れたらクラス削除
+        var link = document.querySelectorAll('a,button');
+        for (var i = 0; i < link.length; i++) {
+            link[i].addEventListener('mouseover', function (e) {
+                cursor.classList.add('cursor--hover');
+            });
+            link[i].addEventListener('mouseout', function (e) {
+                cursor.classList.remove('cursor--hover');   
+            });
+        }
+
+        // 特定のセクションにスクロール
+        $('#page-link a[href*="#"]').click(function () {
+        var elmHash = $(this).attr('href'); //ページ内リンクのHTMLタグhrefから、リンクされているエリアidの値を取得
+        var pos = $(elmHash).offset().top;  //idの上部の距離を取得
+        $('body,html').animate({scrollTop: pos}, 800); //取得した位置にスクロール。500の数値が大きくなるほどゆっくりスクロール
+        return false;
+        });
+
+        window.addEventListener("scroll", function () {
+        const elm = document.querySelector(".toppoint");
+        const scroll = window.pageYOffset;
+        if (scroll > 400) {
+            elm.style.opacity = "1";
+            elm.style.zIndex = "1";
+            // console.log(scroll);
+        } else {
+            elm.style.opacity = "0";
+            elm.style.zIndex = "-1";
+            // console.log(scroll);
+        }
+        });
+
+        window.addEventListener("scroll", function () {
+        const opa = document.querySelector(".button-lineset-sp");
+        const scroller = window.pageYOffset;
+        if (scroller > 400) {
+            opa.style.opacity = "0.5";
+            opa.style.zIndex = "1000";
+            // console.log(scroll);
+        } else {
+            opa.style.opacity = "1";
+            opa.style.zIndex = "1000";
+            // console.log(scroll);
+        }
+        });
+    </script>
+</body>
+</html>
+
+<!-- media="(min-width: 541px)"-->
