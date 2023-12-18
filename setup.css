@@ -1,0 +1,172 @@
+@charset "utf-8";
+
+.section{
+    height: 1200px;
+    text-align: center;
+}
+
+html{
+    background-color: #ffffff;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.news-release{
+    display: inline-block;
+    color: #000000;
+    font-size: 14px;
+    max-width: 250px;
+    width: 80%;
+    max-height: 200px;
+    overflow: auto;
+    background: #22222200;
+    border: 5px solid #999999;
+    padding: 20px 40px 40px 40px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    text-align: left;
+}
+
+/* トップロゴ */
+.corp-logo{
+    width: 200px;
+}
+
+/* 左心電図 */
+.left-heartbeat{
+    position: fixed;
+    transform: scale(0.95);
+}
+
+/* 右心電図 */
+.right-heartbeat{
+    position:fixed;
+    transform: scale(0.95);
+}
+
+/* ショートカット */
+.bg-circle{
+    background-color:#4eade0;
+    width: 550px;
+    height: 550px;
+    transform: rotate(270deg);
+}
+
+.button-lineset{
+    background-color: #0AE60A;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    transition:all 0.5s ease;
+}
+
+.button-line-t,.button-line-m,.button-line-b{
+    width: 30px;
+    border-bottom: #ffffff 5px solid ;
+    margin-bottom: 7px;
+}
+
+.menu-list li{
+    color: #ffffff;
+    padding: 15px 0;
+    border-bottom: 1px solid #ffffff;
+    margin-right: 5px;
+
+}
+
+/* 左下メニュー */
+.list li{
+    color: #ffffff;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 45px;
+    border: 1px solid #0088D0;
+    background-color: #0088D060;
+    transition: 0.3s;
+}
+
+/* メインコンテンツ */
+.main-container{
+    max-width: 500px;
+    width: 100%;
+    background-color: #F4FDF4;
+}
+
+/* トップイメージ */
+.top-img01,.top-img02{
+    max-width: 500px;
+    width: 100%;
+}
+
+/* イメージ内コメント */
+.goods-comment{
+    color: #ffffff;
+    padding: 10px;
+    display: inline-block;
+    background-color: #4db64d;
+}
+
+@media screen and (max-width:399px){
+    .goods-comment{
+        transform:translate(-20px, -10px) scale(0.7);
+    }
+}
+
+.goods-copy{
+    font-size: 15px;
+}
+
+.goods-name{
+    font-size: 30px;
+}
+
+.name-sub{
+    font-size: 10px;
+}
+
+
+
+
+/* sp用 */
+.sp-header-nav{
+    background-color: #ffffff;
+    max-width: 500px;
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+}
+
+.sp-list-set{
+    margin-left: 50px;
+}
+
+.sp-header-nav li{
+    font-size: 20px;
+    color: #0088D0;
+    padding: 50px;
+    border-bottom: 1px solid #0088d070;
+    display: inline-block;
+    width: 200px;
+}
+
+.sp-corp-logo{
+    width: 200px;
+}
+
+.button-lineset-sp{
+    background-color: #0AE60A;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    transition:all 0.5s ease;
+    transform: scale(0.7);
+}
+
+.sp-button-line-t,.sp-button-line-m,.sp-button-line-b{
+    width: 30px;
+    border-bottom: #ffffff 5px solid ;
+    margin-bottom: 7px;
+}

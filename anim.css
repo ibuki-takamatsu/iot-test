@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+/* 左心電図　開始遅延なし */
+#heartbeat-path-1{
+    stroke: url(#g);
+    stroke-width: 10;
+    fill-opacity: 0;
+    animation: SVG-anim01 infinite;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    stroke-dasharray: 2000;
+    stroke-dashoffset: -2000;
+  }
+  @keyframes SVG-anim01 {
+    0% {
+      stroke-dashoffset: 2000;
+    }
+    30% {
+      stroke-dashoffset: 2000;
+    }
+    100% {
+      fill-opacity: 1;
+    }
+  }
+
+/* 右心電図　開始遅延あり(2s) */
+#heartbeat-path-2{
+    stroke: url(#g);
+    stroke-width: 10;
+    fill-opacity: 0;
+    animation: SVG-anim02 infinite;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    stroke-dasharray: 2000;
+    stroke-dashoffset: -2000;
+    animation-delay: 2s;
+    opacity: 0;
+  }
+  @keyframes SVG-anim02 {
+    0% {
+      stroke-dashoffset: 2000;
+      opacity: 1;
+    }
+    30% {
+      stroke-dashoffset: 2000;
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+      fill-opacity: 1;
+    }
+  }
+
+/* 左下メニュー */
+.list li:hover{
+  background-color: #0088D090;
+  transition: 0.3s;
+}
+
+/* 右上ショートカットボタン */
+.close-t{
+ opacity: 0;
+}
+
+.close-m{
+  transform: rotate(45deg);
+  transition:all 0.5s ease;
+ }
+
+.close-b{
+  position: relative;
+  transform: translateY(-12px) rotate(-45deg);
+  transition:all 0.5s ease;
+  z-index: 3;
+ }
+
+ /* ショートカットレイアウト引用 */
+.menu-list-show{
+  position: fixed;
+  top: 50px;
+  right: 40px;
+  transition:all 0.8s ease;
+}
+
+.bg-circle-show{
+  position: fixed;
+  top: -150px;
+  right: -320px;
+  transform: rotate(170deg);
+  transition:all 0.8s ease;
+}
+
+.button-lineset-show{
+  background-color: #0AE60A;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: fixed;
+}
+
+ /*独自のマウスカーソルを作成*/
+ .cursor {
+  position: fixed;
+  top: -5px;
+  left: -5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgb(167, 159, 159);
+  z-index: 50000;
+  transition: width 0.25s, height 0.25s, top 0.25s, left 0.25s;
+  transform: translate(0, 0);
+  pointer-events: none;
+  mix-blend-mode:exclusion;
+}
+
+/*aタグにホバーした時に見た目変化*/
+.cursor.cursor--hover {
+  top: -14px;
+  left: -13px;
+  width: 30px;
+  height: 30px;
+  background: rgb(137, 91, 89);
+  mix-blend-mode:exclusion;
+}

@@ -1,0 +1,227 @@
+@charset "utf-8";
+
+@media screen and (max-width:1000px) {
+    .pc-side-top,.pc-side-middle,.pc-side-bottom{
+        display:none;
+    }
+}
+
+.pc-side-top{
+    width: 100%;
+}
+
+/* トップロゴ */
+.corp-logo{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+/* ショートカット */
+.shortcut-menu{
+    text-align: left;
+    color:#000000;
+}
+.menu-list{
+    position: fixed;
+    top: -500px;
+    right: -400px;
+    transition:all 0.8s ease-in-out;
+    z-index: 1;
+}
+
+.bg-circle{
+    position: fixed;
+    top: -600px;
+    right: -600px;
+    transition:all 0.8s ease-in-out;
+    z-index: 0;
+}
+
+.button-lineset{
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 110;
+}
+
+.button-line-t,.button-line-m,.button-line-b{
+    position: relative;
+    top: 4px;
+    left: 10px;
+    z-index: 3;
+    transition:all 0.5s ease-in-out;
+}
+
+/* 左心電図 */
+.left-heartbeat{
+    position: fixed;
+    left: -40px;
+    top: 3vh;
+    z-index: -10;
+}
+
+@media screen and (max-height:800px) {
+    .left-heartbeat{
+        position: fixed;
+        left: -170px;
+        top: -20vh;
+        transform: scale(0.57);
+        z-index: -10;
+    }
+}
+
+/* 右心電図 */
+.right-heartbeat{
+    position:fixed;
+    right: -35px; 
+    top: 3vh;
+    z-index: -10;
+}
+
+@media screen and (max-height:800px) {
+    .right-heartbeat{
+        position: fixed;
+        right: -170px;
+        top: -20vh;
+        transform: scale(0.57);
+        z-index: -10;
+    }
+}
+
+
+/* 左下メニュー */
+.list{
+    position: fixed;
+    bottom: 20px;
+    text-align: center;
+}
+
+/* メインコンテンツ */
+.main-container{
+    margin: 0 auto;
+    margin-top: -150px;
+}
+
+.main-img{
+    position: relative;
+    bottom: 90px;
+    margin-bottom: -90px;
+    margin-top: -30px;
+}
+
+@media screen and (max-width:1000px) {
+    .main-container{
+        margin: 0 auto;
+        margin-top: 0;
+    }
+
+    .main-img{
+        position: relative;
+        bottom: 90px;
+        margin-bottom: -90px;
+        margin-top: -20px;
+    }
+    
+}
+
+.goods-comment{
+    position: relative;
+    top: 75px;
+    left: 50px;
+    z-index: 1;
+}
+
+
+
+
+/* sp用 */
+@media screen  and (max-width:1000px) {
+    .sp-header-nav{
+        position: fixed;
+        top: -2000px;
+        z-index: 100;
+        margin-top: -50px;
+        padding-top: 100px;
+        transition: 0.5s;
+    }
+
+    .sp-header-nav-show{
+        position: fixed;
+        top: 50px;
+        z-index: 100;
+        margin-top: -50px;
+        padding-top: 100px;
+        transition: 0.5s;
+    }
+
+    @media screen and (max-height:670px) {
+        .sp-list-set{
+            transform: translate(-10px,-70px) scale(0.9);
+        }
+        .sp-corp-logo{
+            transform: scale(0.7);
+        }
+    }
+
+    .sp-header-nav li{
+        padding: 50px;
+    }
+
+    .button-lineset-sp{
+        position: fixed;
+        top: 20px;
+        z-index: 110;
+    }
+
+    .button-fixed{
+        position: relative;
+        left: 10px;
+    }
+
+    .sp-button-line-t,.sp-button-line-m,.sp-button-line-b{
+        position: relative;
+        top: 4px;
+        left: 10px;
+        z-index: 3;
+        transition:all 0.5s ease-in-out;
+    }
+
+    .sp-close-t{            
+        opacity: 0;   
+    }      
+    .sp-close-m{             
+        transform: rotate(45deg);             
+        transition:all 0.5s ease;    
+    }      
+    .sp-close-b{             
+        position: relative;             
+        transform: translateY(-12px) rotate(-45deg);             
+        transition:all 0.5s ease;             
+        z-index: 3;    
+    }
+
+    .sp-corp-logo{
+        position: fixed;
+        bottom: 2000px;
+        text-align: center;
+        margin-left: 50px;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .sp-corp-logo-show{
+        position: fixed;
+        bottom: 20px;
+        text-align: center;
+        margin-left: 50px;
+        transition: 0.5s;
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .toppoint{
+        transform: translateX(70px);
+    }
+}
