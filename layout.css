@@ -225,3 +225,15 @@
         transform: translateX(70px);
     }
 }
+
+@media screen  and (min-width:1000px) {
+    .sp-header-nav{
+        display: none;
+    }
+
+    .sp-header-nav-show{
+        display: none;
+    }
+
+
+    }
